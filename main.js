@@ -19,11 +19,12 @@ for(i = 0; i < close.length; i++){
     }
 }
 
-// creation de la liste
+//creation de la liste
+//Il me manque l'ajout avec tous les inputs (que j'eassaie de faire comme vous m'aviez dit)
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
-
+    
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {

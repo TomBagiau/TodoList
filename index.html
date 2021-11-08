@@ -9,15 +9,30 @@
 </head>
 <body>
 
-    <div class="btnOpenclose"><i class="fas fa-plus"></i></div>
-
-    <div id="myForm" class="form">
-        <input id="myInput" type="Titre" placeholder="Titre">
-        <input id="myInput" type="Lieu" placeholder="Lieu">
-        <input id="myInput" type="Heure" placeholder="Heure">
-        <input id="myInput" type="Description" placeholder="Description">
-        <span onclick="newElement()" class="addBtn">Valider</span>
+    <div class="btnOpenclose">
+        <a href="#popup" class="btn">
+            <i class="fas fa-plus"></i>
+        </a>
     </div>
+    <a href="" class="btn">
+        <i class="fas fa-plus"></i>
+    </a>
+
+    <div id="popup" class="overlay">
+        <div class="popup">
+          <a href="#" class="cross">&times;</a>
+          <div id="myForm" class="form">
+              <form>
+                <input id="myInput" type="Titre" placeholder="Titre">
+                <input id="myInput" type="Lieu" placeholder="Lieu">
+                <input id="myInput" type="Heure" placeholder="Heure">
+                <input id="myInput" type="Description" placeholder="Description">
+                <span onclick="newElement()" class="addBtn">Valider</span>
+              </form>
+        </div>
+        </div>
+      </div>
+      
 
     <ul id="myUl">
         <li id="myLi" class="list">
